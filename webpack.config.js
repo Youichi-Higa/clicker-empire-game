@@ -15,6 +15,9 @@ module.exports = {
   // 例...「import World from './world'」と記述すると"world.ts"という名前のファイルをモジュールとして探す
   resolve: {
     extensions: ['.ts', '.js'], // Reactの.tsxや.jsxの拡張子も扱いたい場合は配列内に追加する
+    alias: {
+      '@': path.resolve(__dirname, '/src'),
+    },
   },
   devServer: {
     static: {
