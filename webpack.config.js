@@ -30,9 +30,19 @@ module.exports = {
     rules: [
       {
         // 拡張子が.tsのファイルに対してTypeScriptコンパイラを適用する
-        // Reactで用いる.tsxの拡張子にも適用する場合は test:/\.(ts|tsx)$/,
         test: /\.ts$/,
         loader: 'ts-loader',
+      },
+      {
+        // 対象となるファイルの拡張子(cssのみ)
+        test: /\.css$/,
+        // Sassファイルの読み込みとコンパイル
+        use: [
+          // スタイルシートをJSからlinkタグに展開する機能
+          'style-loader',
+          // CSSをバンドルするための機能
+          'css-loader',
+        ],
       },
     ],
   },
