@@ -1,0 +1,20 @@
+.bg-steelblue {
+  background-color: steelblue;
+}
+
+.hover {
+  cursor: pointer;
+}
+
+.hover:hover {
+  opacity: 0.7;
+}
+
+.selectItem {
+  background-color: steelblue;
+  cursor: pointer;
+}
+
+.selectItem:hover {
+  border: solid 2px gold;
+}
