@@ -1,5 +1,5 @@
-.bg-orientalBlue {
-  background-color: #26499d;
+.bg-steelblue {
+  background-color: steelblue;
 }
 
 .hover {
@@ -11,7 +11,7 @@
 }
 
 .selectItem {
-  background-color: #26499d;
+  background-color: steelblue;
   cursor: pointer;
 }
 
