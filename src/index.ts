@@ -7,7 +7,9 @@ import '@fortawesome/fontawesome-free/js/regular';
 import './style.css';
 
 import { createInitialPage } from '@/views/createInitialPage';
+import { createMainPage } from '@/views/createMainPage';
 
 const app = document.getElementById('app') as HTMLDivElement;
 const initialPage = createInitialPage();
-app.append(initialPage);
+const mainPage = createMainPage();
+app.append(mainPage);
