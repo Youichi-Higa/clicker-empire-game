@@ -1,8 +1,10 @@
-export const createBurgerStatus = (): HTMLDivElement => {
+import { User } from '@/models/user';
+
+export const createBurgerStatus = (user: User): HTMLDivElement => {
   const container = document.createElement('div');
   container.innerHTML = `
-    <div class="bg-steelblue text-white text-center border border-5 border-dark">
-      <p class="h2 mt-0">0 Burgers</p>
+    <div class="bg-cornflowerblue text-white text-center border border-5 border-dark">
+      <p class="h2 mt-0">${user.stock} Burgers</p>
       <p class="m-1">one click ￥25</p>
     </div>
     <div class="hover text-center mt-5">

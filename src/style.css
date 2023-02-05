@@ -1,5 +1,5 @@
-.bg-steelblue {
-  background-color: steelblue;
+.bg-cornflowerblue {
+  background-color: cornflowerblue;
 }
 
 .hover {
@@ -11,7 +11,7 @@
 }
 
 .selectItem {
-  background-color: steelblue;
+  background-color: cornflowerblue;
   cursor: pointer;
 }
 

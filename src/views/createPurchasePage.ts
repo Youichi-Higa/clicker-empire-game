@@ -1,6 +1,6 @@
 export const createPurchasePage = (): HTMLDivElement => {
   const container = document.createElement('div');
-  container.classList.add('bg-steelblue',"my-2","p-2");
+  container.classList.add('bg-cornflowerblue', 'my-2', 'p-2');
 
   container.innerHTML = `
     <div class="d-flex justify-content-between align-items-center">

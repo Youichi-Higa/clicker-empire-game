@@ -7,7 +7,7 @@ export const createMainPage = (user: User): HTMLDivElement => {
   const container = document.createElement('div');
   container.classList.add('bg-dark', 'vh-100', 'd-flex', 'justify-content-center', 'p-md-5');
   container.innerHTML = `
-    <div class="bg-steelblue p-2 d-flex col-12 col-md-11 col-lg-10">
+    <div class="bg-cornflowerblue p-2 d-flex col-12 col-md-11 col-lg-10">
 
       <div class="bg-dark p-2 col-4" id="burgerStatus">
       </div>
@@ -32,9 +32,9 @@ export const createMainPage = (user: User): HTMLDivElement => {
     </div>
   `;
 
-  container.querySelectorAll('#burgerStatus')[0].append(createBurgerStatus());
-  container.querySelectorAll('#userInfo')[0].append(createUserInfo());
-  container.querySelectorAll('#items')[0].append(createItemList());
+  container.querySelectorAll('#burgerStatus')[0].append(createBurgerStatus(user));
+  container.querySelectorAll('#userInfo')[0].append(createUserInfo(user));
+  container.querySelectorAll('#items')[0].append(createItemList(user));
 
   return container;
 };
