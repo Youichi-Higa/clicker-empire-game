@@ -1,7 +1,7 @@
+import { User } from '@/models/user';
 import { createBurgerStatus } from './createBurgerStatus';
 import { createUserInfo } from './createUserInfo';
 import { createItemList } from './createItemList';
-import { User } from '@/models/user';
 
 export const createMainPage = (user: User): HTMLDivElement => {
   const container = document.createElement('div');
@@ -27,7 +27,6 @@ export const createMainPage = (user: User): HTMLDivElement => {
           <i class="fa-solid fa-save fa-3x text-white"></i>
         </div>
       </div>
-
 
     </div>
   `;

@@ -1,3 +1,4 @@
+import { startTimer } from './startTimer';
 import { createInitialPage } from '@/views/createInitialPage';
 import { createMainPage } from '@/views/createMainPage';
 import { createInitialUserAccount } from '@/controllers/createInitialUserAccount';
@@ -17,6 +18,7 @@ export const initializeApp = () => {
       const user = createInitialUserAccount(userName);
       app.innerHTML = '';
       app.append(createMainPage(user));
+      startTimer(user);
     }
   });
 };
