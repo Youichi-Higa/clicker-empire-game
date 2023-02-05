@@ -1,8 +1,9 @@
 import { createBurgerStatus } from './createBurgerStatus';
 import { createUserInfo } from './createUserInfo';
 import { createItemList } from './createItemList';
+import { User } from '@/models/user';
 
-export const createMainPage = (): HTMLDivElement => {
+export const createMainPage = (user: User): HTMLDivElement => {
   const container = document.createElement('div');
   container.classList.add('bg-dark', 'vh-100', 'd-flex', 'justify-content-center', 'p-md-5');
   container.innerHTML = `

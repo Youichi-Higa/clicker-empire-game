@@ -20,10 +20,10 @@ export const createInitialPage = (): HTMLDivElement => {
 
       <div class="d-flex justify-content-between">
         <div class="col-6">
-          <button type="button" class="btn btn-primary col-11">New</button>
+          <button type="button" class="btn btn-primary col-11" id="newGame">New</button>
         </div>
         <div class="col-6 text-end">
-          <button type="button" class="btn btn-primary col-11">Login</button>
+          <button type="button" class="btn btn-primary col-11" id="login">Login</button>
         </div>
       </div>  
     </div>

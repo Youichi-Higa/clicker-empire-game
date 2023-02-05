@@ -1,7 +1,7 @@
 import { Item } from '@/models/item';
 import { User } from '@/models/user';
 
-export const createInitialUserAccount = (username: string) => {
+export const createInitialUserAccount = (username: string): User => {
   const itemList = [
     new Item(
       'Flip machine',
